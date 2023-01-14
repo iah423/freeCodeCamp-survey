@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form></title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please take the time to fill out this survey</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name <input id="name" name="name" type="text" required placeholder="Enter your name" /></label>
+        <label id="email-label" for="email">Email <input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+        <label id="number-label" for="number">Age <input id="number" name="age" type="number" min="13" max="120" placeholder="Enter your age"/></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown-label">Choose an option
+          <select id="dropdown">
+            <option value="">(Select one)</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label><input class="radio" type="radio" name="radio-option" value="option-1" class="inline" /> Option 1</label>
+        <label><input class="radio" type="radio" name="radio-option" value="option-2" class="inline" /> Option 2</label>
+        <label>
+          <input class="checkbox" type="checkbox" value ="option-3" class="inline" />Option 3
+        </label>
+        <label>
+          <input class="checkbox" type="checkbox" value ="option-4" class="inline" />Option 4
+        </label>
+      </fieldset>
+      <fieldset>Provide any additional comments:
+        <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comments here..."></textarea>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
